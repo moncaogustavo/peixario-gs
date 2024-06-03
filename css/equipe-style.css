@@ -1,83 +1,56 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e0f7fa;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.container {
+  width: 80%;
+  max-height: 80%;
+  min-height: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-header{
-    grid-area: header;
+.membros {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  pad: 10px;
+  background: #ffffff;
+  border: 1px solid #0288d1;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-main{
-    grid-area: main;
+.membros img {
+  width: 100%;
+  height: auto;
 }
 
-.container{
-    width: 80%;
-    max-width: 1200px;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.foto {
+  border-radius: 50%;
+  border: 2px solid #0288d1;
+}
+h2 {
+  color: #01579b;
+  font-size: 1.5rem;
 }
 
-h1{
-    margin-bottom: 20px;
-    color: #01579b;
+.membros h3 {
+  margin: 10px 0;
+  color: #0277bd;
 }
 
-.membros{
-    display: inline-block;
-    width: 30%;
-    margin: 1%;
-    pad: 10px;
-    background: #ffffff;
-    border: 1px solid #0288d1;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.membros p {
+  margin: 5px 0;
+  color: #0288d1;
 }
 
-.membros img{
-    width: 100%;
-    height: auto;
+.social-links {
+  display: flex;
+  justify-content: space-around;
 }
 
-.foto{
-    border-radius: 50%;
-    border: 3px solid #0288d1;
-}
-
-.membros h2{
-    margin: 10px 0;
-    color: #0277bd;
-}
-
-.membros p{
-    margin: 5px 0;
-    color: #0288d1;
-}
-
-.social-links{
-    display: flex;
-    justify-content: space-around;
-}
-
-.social-links a{
-    width: 20%;
-    height: 20%;
-    margin: 5px;
-}
-
-footer{
-    text-align: center;
+.social-links a {
+  width: 20%;
+  height: 20%;
+  margin: 5px;
 }
