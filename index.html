@@ -10,7 +10,9 @@
   <body>
     <header>
       <div id="img">
-        <a href="index.html"><img src="imgs/logo-peixario.png" alt="Logo da página"/></a>
+        <a href="index.html"
+          ><img src="imgs/logo-peixario.png" alt="Logo da página"
+        /></a>
       </div>
       <h1>PEIXARIO</h1>
       <div class="espaco"></div>
@@ -20,27 +22,60 @@
       <div class="container">
         <a href="/sobre-projeto.html" target="_blank">
           <div class="box">
-              <h2>01</h2>
-              <h3>Sobre o Projeto</h3>
-              <p>O Peixário é um sistema destinado ao monitoramento das atividades de pesca com o intuito de proteger e controlar a biodiversidade marinha. O foco principal é garantir a sustentabilidade dos ecossistemas marinhos.</p>
+            <h2>01</h2>
+            <h3>Sobre o Projeto</h3>
+            <p>
+              O Peixário é um sistema destinado ao monitoramento das atividades
+              de pesca com o intuito de proteger e controlar a biodiversidade
+              marinha. O foco principal é garantir a sustentabilidade dos
+              ecossistemas marinhos.
+            </p>
           </div>
         </a>
         <a href="/conscientizacao.html" target="_blank">
           <div class="box">
-              <h2>02</h2>
-              <h3>Conscientização</h3>
-              <p>Campanhas de conscientização pública sobre a importância da pesca responsável e os impactos da sobrepesca no ecossistema marinho. Plataforma de informações para educar pescadores sobre práticas de pesca sustentável.</p>
+            <h2>02</h2>
+            <h3>Conscientização</h3>
+            <p>
+              Campanhas de conscientização pública sobre a importância da pesca
+              responsável e os impactos da sobrepesca no ecossistema marinho.
+              Plataforma de informações para educar pescadores sobre práticas de
+              pesca sustentável.
+            </p>
           </div>
         </a>
-        <a href="/regulamentacao.html" target="_blank">
+        <a id="dev" href="/regulamentacao.html" target="_blank">
           <div class="box">
-              <h2>03</h2>
-              <h3>Regulamentação</h3>
-              <p>As regulamentações do sistema Peixário incluem cadastro e licenciamento obrigatório de embarcações, instalação de dispositivos de monitoramento, e submissão de relatórios de captura. Também preveem a publicação de dados.</p>
+            <h2>03</h2>
+            <h3>Regulamentação</h3>
+            <p>
+              As regulamentações do sistema Peixário incluem cadastro e
+              licenciamento obrigatório de embarcações, instalação de
+              dispositivos de monitoramento, e submissão de relatórios de
+              captura. Também preveem a publicação de dados.
+            </p>
           </div>
         </a>
       </div>
     </main>
     <footer><p>© 2024 Peixário. Todos os direitos reservados.</p></footer>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "db47f2a8-4887-4ae6-a623-f0ab276ff9a2", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "674a31e0-0e32-40b2-a1cd-9ebad11c88b5", // The ID of your service instance.
+        onLoad: async (instance) => {
+          await instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
   </body>
 </html>

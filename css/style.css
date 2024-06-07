@@ -42,16 +42,24 @@ header img {
   width: 40%;
 }
 header #dev {
+  display: inline-block;
   height: 50px;
-  max-width: 30%;
-  width: 200px;
+  width: auto;
+  padding: 10px 20px;
   margin: 20px;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
   text-decoration: none;
-  border: 2px solid black;
-  color: red;
-  background-color: silver;
-  padding: 10px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header #dev:hover {
+  background-color: #45a049;
 }
 main {
   position: relative;
@@ -77,4 +85,43 @@ footer {
   color: #e0f7fa;
   width: 100vw;
   max-width: 100%;
+}
+@media only screen and (max-width: 1150px) {
+  header #dev {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 140px;
+  }
+  #img {
+    width: 140px;
+    height: 100%;
+    margin: 5px;
+  }
+  .forms {
+    height: 20px;
+  }
+  nav {
+    height: 20%;
+  }
+  #divBusca {
+    height: 40px;
+  }
+  #txtBusca {
+    font-size: 14px;
+  }
+  main section div p {
+    font-size: 1.5rem;
+  }
+  main section div a {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header #dev {
+    font-size: 0.8em;
+  }
 }
