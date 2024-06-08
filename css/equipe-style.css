@@ -1,8 +1,12 @@
+main {
+  min-width: 100vw;
+}
 .container {
-  width: 80%;
-  max-height: 80%;
-  min-height: 100%;
-  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -10,28 +14,33 @@
 }
 
 .membros {
-  display: inline-block;
-  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
   margin: 1%;
-  pad: 10px;
+  padding: 10px;
   background: #ffffff;
   border: 1px solid #0288d1;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.membros .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .membros img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 
-.foto {
-  border-radius: 50%;
-  border: 2px solid #0288d1;
-}
 h2 {
   color: #01579b;
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .membros h3 {
@@ -47,10 +56,37 @@ h2 {
 .social-links {
   display: flex;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .social-links a {
   width: 20%;
   height: 20%;
   margin: 5px;
+}
+
+/* Estilos para tornar o conteúdo mais legível em telas menores */
+@media only screen and (max-width: 980px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .membros {
+    width: calc(80% - 2%);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .membros {
+    display: flex;
+    flex-direction: column;
+  }
 }

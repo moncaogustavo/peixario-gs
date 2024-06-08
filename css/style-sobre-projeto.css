@@ -9,38 +9,6 @@ main {
   position: relative;
 }
 
-h2,
-h3,
-p,
-li {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #333; /* Cor do texto */
-  line-height: 1.6; /* Altura da linha */
-}
-
-h1 {
-  font-size: 2.5em; /* Tamanho da fonte */
-}
-
-h2 {
-  font-size: 2em; /* Tamanho da fonte */
-  margin-bottom: 10px; /* Espaçamento inferior */
-}
-
-h3 {
-  font-size: 1.5em; /* Tamanho da fonte */
-  margin-bottom: 10px; /* Espaçamento inferior */
-}
-
-p {
-  font-size: 1.1em; /* Tamanho da fonte */
-  margin-bottom: 20px; /* Espaçamento inferior */
-}
-
-li {
-  font-size: 1.1em; /* Tamanho da fonte */
-  margin-bottom: 10px; /* Espaçamento inferior */
-}
 footer p {
   color: #fff;
 }
